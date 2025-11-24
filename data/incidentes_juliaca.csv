@@ -1,0 +1,116 @@
+id,zona_id,tipo,subtipo,hora,dia_semana,descripcion,fecha,gravedad
+240,1,accidente,atropello,10,6,Atropello en Plaza de Armas,2025-09-08T20:02:54.174311,3
+241,1,hurto,robo_tienda,15,4,Robo Tienda en Plaza de Armas,2025-08-20T20:02:54.174311,8
+242,1,hurto,robo_tienda,4,4,Robo Tienda en Plaza de Armas,2025-10-29T20:02:54.174311,10
+243,1,hurto,hurto_vehiculo,15,1,Hurto Vehiculo en Plaza de Armas,2025-10-25T20:02:54.174311,3
+244,1,robo,asalto_bus,22,3,Asalto Bus en Plaza de Armas,2025-08-18T20:02:54.174311,5
+245,2,robo,asalto_mano_armada,21,0,Asalto Mano Armada en Terminal Terrestre,2025-11-03T20:02:54.174311,7
+246,2,accidente,volcadura,16,4,Volcadura en Terminal Terrestre,2025-10-01T20:02:54.174311,10
+247,2,robo,asalto_mano_armada,2,3,Asalto Mano Armada en Terminal Terrestre,2025-10-21T20:02:54.174311,2
+248,2,hurto,hurto_vehiculo,12,1,Hurto Vehiculo en Terminal Terrestre,2025-08-23T20:02:54.174311,10
+249,2,hurto,carterista,17,0,Carterista en Terminal Terrestre,2025-09-22T20:02:54.174311,9
+250,2,accidente,atropello,23,4,Atropello en Terminal Terrestre,2025-09-03T20:02:54.174311,8
+251,2,accidente,choque,15,2,Choque en Terminal Terrestre,2025-08-27T20:02:54.174311,10
+252,2,accidente,volcadura,12,4,Volcadura en Terminal Terrestre,2025-10-02T20:02:54.174311,5
+253,3,hurto,carterista,6,3,Carterista en Mercado Santa Bárbara,2025-10-28T20:02:54.174311,10
+254,3,robo,asalto_mano_armada,6,4,Asalto Mano Armada en Mercado Santa Bárbara,2025-11-02T20:02:54.174311,4
+255,3,robo,robo_cartera,5,4,Robo Cartera en Mercado Santa Bárbara,2025-10-03T20:02:54.174311,4
+256,3,robo,robo_cartera,18,4,Robo Cartera en Mercado Santa Bárbara,2025-10-21T20:02:54.174311,10
+257,3,robo,asalto_mano_armada,10,1,Asalto Mano Armada en Mercado Santa Bárbara,2025-08-29T20:02:54.174311,1
+258,3,robo,robo_celular,20,4,Robo Celular en Mercado Santa Bárbara,2025-09-21T20:02:54.174311,5
+259,4,robo,asalto_mano_armada,10,5,Asalto Mano Armada en Mercado Túpac Amaru,2025-08-09T20:02:54.174311,6
+260,4,hurto,carterista,12,3,Carterista en Mercado Túpac Amaru,2025-09-22T20:02:54.174311,10
+261,4,hurto,robo_tienda,10,4,Robo Tienda en Mercado Túpac Amaru,2025-08-12T20:02:54.174311,4
+262,4,robo,asalto_bus,1,3,Asalto Bus en Mercado Túpac Amaru,2025-10-12T20:02:54.174311,2
+263,4,robo,asalto_bus,21,4,Asalto Bus en Mercado Túpac Amaru,2025-10-26T20:02:54.174311,4
+264,4,robo,robo_cartera,21,4,Robo Cartera en Mercado Túpac Amaru,2025-09-07T20:02:54.174311,3
+265,4,hurto,carterista,18,4,Carterista en Mercado Túpac Amaru,2025-08-14T20:02:54.174311,3
+266,4,hurto,carterista,19,3,Carterista en Mercado Túpac Amaru,2025-08-19T20:02:54.174311,5
+267,5,hurto,carterista,9,6,Carterista en Universidad Andina Néstor Cáceres Velásquez,2025-08-22T20:02:54.174311,6
+268,5,violencia,riña,14,1,Riña en Universidad Andina Néstor Cáceres Velásquez,2025-08-09T20:02:54.174311,5
+269,5,robo,asalto_bus,12,1,Asalto Bus en Universidad Andina Néstor Cáceres Velásquez,2025-09-18T20:02:54.174311,2
+270,6,robo,robo_celular,3,4,Robo Celular en Universidad Peruana Unión,2025-10-26T20:02:54.174311,6
+271,6,violencia,riña,4,0,Riña en Universidad Peruana Unión,2025-10-01T20:02:54.174311,1
+272,7,robo,robo_celular,19,5,Robo Celular en Salida a Puno,2025-11-04T20:02:54.174311,7
+273,7,accidente,atropello,4,1,Atropello en Salida a Puno,2025-11-01T20:02:54.174311,4
+274,7,accidente,choque,10,0,Choque en Salida a Puno,2025-10-10T20:02:54.174311,10
+275,7,robo,robo_cartera,17,4,Robo Cartera en Salida a Puno,2025-08-27T20:02:54.174311,4
+276,7,accidente,choque,5,3,Choque en Salida a Puno,2025-10-11T20:02:54.174311,7
+277,7,accidente,volcadura,20,6,Volcadura en Salida a Puno,2025-09-10T20:02:54.174311,3
+278,7,accidente,choque,16,3,Choque en Salida a Puno,2025-08-30T20:02:54.174311,3
+279,8,accidente,atropello,9,3,Atropello en Salida a Arequipa,2025-10-24T20:02:54.174311,6
+280,8,accidente,atropello,13,3,Atropello en Salida a Arequipa,2025-11-03T20:02:54.174311,1
+281,8,accidente,atropello,1,3,Atropello en Salida a Arequipa,2025-10-28T20:02:54.174311,10
+282,8,accidente,atropello,4,0,Atropello en Salida a Arequipa,2025-09-11T20:02:54.174311,6
+283,8,robo,asalto_bus,18,5,Asalto Bus en Salida a Arequipa,2025-09-19T20:02:54.174311,8
+284,8,robo,robo_cartera,19,3,Robo Cartera en Salida a Arequipa,2025-10-22T20:02:54.174311,2
+285,8,robo,robo_celular,3,3,Robo Celular en Salida a Arequipa,2025-10-15T20:02:54.174311,8
+286,8,robo,asalto_bus,11,0,Asalto Bus en Salida a Arequipa,2025-10-26T20:02:54.174311,4
+287,8,accidente,atropello,7,0,Atropello en Salida a Arequipa,2025-08-27T20:02:54.174311,2
+288,8,robo,robo_cartera,14,2,Robo Cartera en Salida a Arequipa,2025-10-26T20:02:54.174311,3
+289,9,trata,intento_secuestro,22,1,Intento Secuestro en Zona Industrial,2025-08-09T20:02:54.174311,4
+290,9,violencia,agresion,19,2,Agresion en Zona Industrial,2025-09-02T20:02:54.174311,8
+291,9,violencia,violencia_familiar,18,6,Violencia Familiar en Zona Industrial,2025-09-07T20:02:54.174311,8
+292,9,accidente,volcadura,16,5,Volcadura en Zona Industrial,2025-08-10T20:02:54.174311,8
+293,10,hurto,hurto_vehiculo,5,3,Hurto Vehiculo en Centro Comercial Real Plaza,2025-08-18T20:02:54.174311,5
+294,10,hurto,hurto_vehiculo,14,4,Hurto Vehiculo en Centro Comercial Real Plaza,2025-09-23T20:02:54.174311,5
+295,10,hurto,carterista,1,4,Carterista en Centro Comercial Real Plaza,2025-09-27T20:02:54.174311,5
+296,10,hurto,robo_tienda,22,4,Robo Tienda en Centro Comercial Real Plaza,2025-08-14T20:02:54.174311,3
+297,11,robo,robo_cartera,23,5,Robo Cartera en Barrio Chilla,2025-10-19T20:02:54.174311,9
+298,11,violencia,agresion,12,0,Agresion en Barrio Chilla,2025-09-19T20:02:54.174311,2
+299,11,accidente,atropello,16,4,Atropello en Barrio Chilla,2025-10-29T20:02:54.174311,9
+300,11,violencia,violencia_familiar,10,3,Violencia Familiar en Barrio Chilla,2025-08-13T20:02:54.174311,5
+301,11,accidente,volcadura,8,3,Volcadura en Barrio Chilla,2025-11-01T20:02:54.174311,5
+302,11,violencia,agresion,0,3,Agresion en Barrio Chilla,2025-10-16T20:02:54.174311,4
+303,12,violencia,riña,13,1,Riña en Barrio San José,2025-10-22T20:02:54.174311,7
+304,12,violencia,violencia_familiar,3,0,Violencia Familiar en Barrio San José,2025-09-18T20:02:54.174311,6
+305,12,hurto,hurto_vehiculo,15,6,Hurto Vehiculo en Barrio San José,2025-11-02T20:02:54.174311,10
+306,12,trafico,congestion,17,1,Congestion en Barrio San José,2025-09-15T20:02:54.174311,3
+307,13,violencia,violencia_familiar,1,6,Violencia Familiar en Urbanización San Santiago,2025-10-21T20:02:54.174311,4
+308,13,violencia,riña,18,3,Riña en Urbanización San Santiago,2025-09-09T20:02:54.174311,3
+309,14,robo,robo_cartera,20,3,Robo Cartera en Jr. Mariano Núñez (Zona Roja),2025-09-16T20:02:54.174311,6
+310,14,robo,robo_celular,16,5,Robo Celular en Jr. Mariano Núñez (Zona Roja),2025-08-23T20:02:54.174311,5
+311,14,robo,robo_celular,20,3,Robo Celular en Jr. Mariano Núñez (Zona Roja),2025-09-12T20:02:54.174311,4
+312,14,trata,explotacion,21,0,Explotacion en Jr. Mariano Núñez (Zona Roja),2025-09-26T20:02:54.174311,9
+313,14,violencia,riña,2,2,Riña en Jr. Mariano Núñez (Zona Roja),2025-10-17T20:02:54.174311,6
+314,14,violencia,riña,0,6,Riña en Jr. Mariano Núñez (Zona Roja),2025-10-27T20:02:54.174311,7
+315,14,trata,intento_secuestro,23,0,Intento Secuestro en Jr. Mariano Núñez (Zona Roja),2025-10-03T20:02:54.174311,5
+316,14,trata,explotacion,22,0,Explotacion en Jr. Mariano Núñez (Zona Roja),2025-09-16T20:02:54.174311,9
+317,14,violencia,riña,8,0,Riña en Jr. Mariano Núñez (Zona Roja),2025-08-26T20:02:54.174311,4
+318,15,trata,captacion,18,4,Captacion en Jr. San Román (Zona Roja),2025-09-26T20:02:54.174311,8
+319,15,trata,captacion,18,4,Captacion en Jr. San Román (Zona Roja),2025-09-19T20:02:54.174311,5
+320,15,robo,robo_celular,19,5,Robo Celular en Jr. San Román (Zona Roja),2025-10-21T20:02:54.174311,10
+321,15,trata,captacion,2,6,Captacion en Jr. San Román (Zona Roja),2025-09-07T20:02:54.174311,3
+322,15,trata,intento_secuestro,1,2,Intento Secuestro en Jr. San Román (Zona Roja),2025-08-10T20:02:54.174311,10
+323,15,trata,explotacion,20,5,Explotacion en Jr. San Román (Zona Roja),2025-11-05T20:02:54.174311,7
+324,15,trata,captacion,18,4,Captacion en Jr. San Román (Zona Roja),2025-09-16T20:02:54.174311,5
+325,15,robo,robo_celular,20,3,Robo Celular en Jr. San Román (Zona Roja),2025-09-14T20:02:54.174311,3
+326,15,trata,captacion,2,6,Captacion en Jr. San Román (Zona Roja),2025-09-03T20:02:54.174311,8
+327,15,robo,asalto_bus,20,2,Asalto Bus en Jr. San Román (Zona Roja),2025-09-06T20:02:54.174311,10
+328,15,robo,asalto_bus,23,0,Asalto Bus en Jr. San Román (Zona Roja),2025-09-16T20:02:54.174311,6
+329,16,trafico,congestion,0,5,Congestion en Av. Circunvalación Norte,2025-09-16T20:02:54.174311,3
+330,16,trata,intento_secuestro,19,6,Intento Secuestro en Av. Circunvalación Norte,2025-08-29T20:02:54.174311,1
+331,16,hurto,hurto_vehiculo,8,2,Hurto Vehiculo en Av. Circunvalación Norte,2025-09-29T20:02:54.174311,1
+332,16,trata,explotacion,5,3,Explotacion en Av. Circunvalación Norte,2025-10-12T20:02:54.174311,4
+333,16,hurto,hurto_vehiculo,14,1,Hurto Vehiculo en Av. Circunvalación Norte,2025-10-15T20:02:54.174311,2
+334,17,hurto,hurto_vehiculo,20,5,Hurto Vehiculo en Av. Huancané,2025-10-05T20:02:54.174311,2
+335,17,hurto,carterista,18,2,Carterista en Av. Huancané,2025-09-14T20:02:54.174311,5
+336,17,hurto,robo_tienda,10,1,Robo Tienda en Av. Huancané,2025-09-20T20:02:54.174311,9
+337,17,trata,explotacion,23,0,Explotacion en Av. Huancané,2025-09-17T20:02:54.174311,9
+338,17,accidente,volcadura,3,6,Volcadura en Av. Huancané,2025-08-12T20:02:54.174311,5
+339,17,robo,asalto_bus,20,5,Asalto Bus en Av. Huancané,2025-09-19T20:02:54.174311,4
+340,17,violencia,agresion,1,0,Agresion en Av. Huancané,2025-08-30T20:02:54.174311,1
+341,17,hurto,robo_tienda,15,3,Robo Tienda en Av. Huancané,2025-09-10T20:02:54.174311,10
+342,18,robo,robo_celular,13,3,Robo Celular en Aeropuerto Inca Manco Cápac,2025-09-21T20:02:54.174311,3
+343,18,trata,intento_secuestro,21,2,Intento Secuestro en Aeropuerto Inca Manco Cápac,2025-09-20T20:02:54.174311,1
+344,18,accidente,choque,1,1,Choque en Aeropuerto Inca Manco Cápac,2025-09-24T20:02:54.174311,4
+345,18,violencia,riña,22,1,Riña en Aeropuerto Inca Manco Cápac,2025-08-20T20:02:54.174311,8
+346,19,violencia,violencia_familiar,19,0,Violencia Familiar en Estadio Guillermo Briceño,2025-10-04T20:02:54.174311,4
+347,19,accidente,atropello,22,1,Atropello en Estadio Guillermo Briceño,2025-08-16T20:02:54.174311,8
+348,19,hurto,hurto_vehiculo,13,0,Hurto Vehiculo en Estadio Guillermo Briceño,2025-10-28T20:02:54.174311,7
+349,19,accidente,volcadura,1,6,Volcadura en Estadio Guillermo Briceño,2025-10-14T20:02:54.174311,5
+350,19,trafico,congestion,1,5,Congestion en Estadio Guillermo Briceño,2025-10-24T20:02:54.174311,10
+351,20,trafico,congestion,14,5,Congestion en Hospital Carlos Monge Medrano,2025-09-10T20:02:54.174311,9
+352,20,robo,asalto_bus,14,3,Asalto Bus en Hospital Carlos Monge Medrano,2025-10-31T20:02:54.174311,2
+353,20,trafico,accidente_menor,14,2,Accidente Menor en Hospital Carlos Monge Medrano,2025-09-10T20:02:54.174311,4
+354,20,violencia,agresion,23,3,Agresion en Hospital Carlos Monge Medrano,2025-09-11T20:02:54.174311,5

@@ -1,0 +1,21 @@
+id,nombre,lat,lon,riesgo_general,tipo_zona,descripcion,poblacion,ultima_actualizacion
+1,Plaza de Armas,-15.5,-70.1333,45,centro_historico,Centro neurálgico de Juliaca,5000,2025-11-06T20:02:54.156708
+2,Terminal Terrestre,-15.48,-70.12,75,transporte,Principal terminal de buses interprovinciales,8000,2025-11-06T20:02:54.172382
+3,Mercado Santa Bárbara,-15.495,-70.128,65,comercio,Mercado principal de abastos,12000,2025-11-06T20:02:54.172393
+4,Mercado Túpac Amaru,-15.492,-70.13,68,comercio,Mercado de productos andinos,9000,2025-11-06T20:02:54.172401
+5,Universidad Andina Néstor Cáceres Velásquez,-15.47,-70.14,30,educacion,Principal universidad de la región,15000,2025-11-06T20:02:54.172423
+6,Universidad Peruana Unión,-15.465,-70.145,28,educacion,Campus universitario,8000,2025-11-06T20:02:54.172431
+7,Salida a Puno,-15.52,-70.115,80,carretera,"Carretera Juliaca-Puno, zona de asaltos",3000,2025-11-06T20:02:54.172440
+8,Salida a Arequipa,-15.46,-70.11,75,carretera,Vía principal hacia Arequipa,4000,2025-11-06T20:02:54.172447
+9,Zona Industrial,-15.46,-70.15,55,industrial,Área de fábricas y almacenes,6000,2025-11-06T20:02:54.172454
+10,Centro Comercial Real Plaza,-15.485,-70.132,40,comercio,Principal centro comercial,10000,2025-11-06T20:02:54.172467
+11,Barrio Chilla,-15.49,-70.125,50,residencial,Barrio residencial,7000,2025-11-06T20:02:54.172476
+12,Barrio San José,-15.488,-70.138,48,residencial,Zona residencial,6500,2025-11-06T20:02:54.172485
+13,Urbanización San Santiago,-15.475,-70.135,35,residencial,Urbanización moderna,5000,2025-11-06T20:02:54.172493
+14,Jr. Mariano Núñez (Zona Roja),-15.498,-70.131,85,zona_roja,"Zona de prostitución, alto riesgo de trata",2000,2025-11-06T20:02:54.172501
+15,Jr. San Román (Zona Roja),-15.499,-70.129,82,zona_roja,Zona de bares y prostíbulos,1800,2025-11-06T20:02:54.172509
+16,Av. Circunvalación Norte,-15.485,-70.135,60,avenida,Avenida principal con alto tráfico,8000,2025-11-06T20:02:54.172515
+17,Av. Huancané,-15.492,-70.133,58,avenida,Avenida comercial,7500,2025-11-06T20:02:54.172522
+18,Aeropuerto Inca Manco Cápac,-15.467,-70.158,35,aeropuerto,Aeropuerto internacional,5000,2025-11-06T20:02:54.172528
+19,Estadio Guillermo Briceño,-15.488,-70.127,45,deportivo,Estadio municipal,4000,2025-11-06T20:02:54.172534
+20,Hospital Carlos Monge Medrano,-15.491,-70.134,42,salud,Principal hospital de Juliaca,6000,2025-11-06T20:02:54.172542

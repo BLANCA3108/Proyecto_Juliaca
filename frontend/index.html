@@ -1,0 +1,272 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap Juliaca - Dijkstra Canvas</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e27;
+            color: white;
+            overflow: hidden;
+        }
+        
+        #header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        
+        #header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        #header p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+            font-size: 13px;
+        }
+        
+        #container {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+        
+        #panel {
+            width: 320px;
+            background: #16213e;
+            padding: 15px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+        }
+        
+        #mapa-container {
+            flex: 1;
+            position: relative;
+            background: #1a1a2e;
+        }
+        
+        canvas {
+            display: block;
+            cursor: crosshair;
+        }
+        
+        .seccion {
+            background: #1a2540;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #2a3f5f;
+        }
+        
+        .seccion h3 {
+            color: #00ff88;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 13px;
+        }
+        
+        select {
+            background: #0a0e27;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        #info {
+            background: #0a0e27;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 1.5;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 6px 0;
+            padding: 6px;
+            background: #16213e;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+        
+        .leyenda {
+            background: #1a2540;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        .leyenda-item {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+            font-size: 11px;
+        }
+        
+        .leyenda-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 2px solid white;
+        }
+        
+        #controles {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(22, 33, 62, 0.95);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        
+        #controles button {
+            width: 80px;
+            padding: 6px;
+            margin: 2px;
+            font-size: 12px;
+        }
+        
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.9);
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        label {
+            color: #95e1d3;
+            font-size: 11px;
+            display: block;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🗺️ HEATMAP JULIACA - Dijkstra sobre Dataset Real</h1>
+        <p>Mapa generado desde CSV | Algoritmo de Dijkstra | Click para seleccionar origen/destino</p>
+    </div>
+    
+    <div id="container">
+        <div id="panel">
+            <div class="seccion">
+                <h3>🎯 Calcular Ruta</h3>
+                
+                <label>📍 Origen:</label>
+                <select id="selectOrigen">
+                    <option value="">Cargando...</option>
+                </select>
+                
+                <label>🎯 Destino:</label>
+                <select id="selectDestino">
+                    <option value="">Cargando...</option>
+                </select>
+                
+                <button id="btnCalcular" disabled>🚀 Calcular Ruta</button>
+                <button id="btnLimpiar">🔄 Limpiar</button>
+            </div>
+            
+            <div class="seccion">
+                <h3>📊 Información</h3>
+                <div id="info">
+                    <p style="color: #95e1d3; text-align: center; padding: 15px; font-size: 11px;">
+                        Selecciona origen y destino<br>
+                        o haz click en el mapa
+                    </p>
+                </div>
+            </div>
+            
+            <div class="leyenda">
+                <h3 style="font-size: 13px; margin-bottom: 8px;">🎨 Riesgo</h3>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background: #2ecc71;"></div>
+                    <span>Bajo (0-40)</span>
+                </div>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background: #f39c12;"></div>
+                    <span>Medio (40-60)</span>
+                </div>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background: #e67e22;"></div>
+                    <span>Alto (60-75)</span>
+                </div>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background: #e74c3c;"></div>
+                    <span>Crítico (75+)</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mapa-container">
+            <canvas id="canvas"></canvas>
+            
+            <div id="controles">
+                <button onclick="zoomIn()">🔍 +</button>
+                <button onclick="zoomOut()">🔍 −</button>
+                <button onclick="resetVista()">↺</button>
+            </div>
+            
+            <div id="loading">
+                <div class="spinner"></div>
+                <div>Cargando datos...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/canvas-mapa.js"></script>
+</body>
+</html>
